@@ -32,7 +32,7 @@ export const SubscribeForm: React.FC = () => {
         window.location.href='https://t.me/joinchat/AAAAAFgVjV5ki-2S9VAlbg';
         }}
       >
-        <span>Subscribe</span>
+        <span>Подписаться</span>
       </SubscribeFormButton>
     </form>
   );
