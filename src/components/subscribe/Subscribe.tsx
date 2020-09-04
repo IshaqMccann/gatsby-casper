@@ -32,7 +32,7 @@ export const Subscribe: React.FC<SubscribeProps> = props => {
 
 const SubscribeFormSection = styled.section`
   margin: 1.5em 0;
-  padding: 6.5vw 7vw 8vw;
+  padding: 6.5vw 7vw 5vw;
   /* border: color(var(--lightgrey) l(+10%)) 1px solid; */
   border: ${lighten('0.1', colors.lightgrey)} 1px solid;
   text-align: center;
