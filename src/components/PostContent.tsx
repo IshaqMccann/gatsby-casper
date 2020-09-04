@@ -23,7 +23,7 @@ export interface PostContentProps {
   htmlAst: any;
 }
 
-const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => {
+const PostContent: React.FC<PostContentProps> = ({ htmlAst, pageId }) => {
   return (
     <PostFullContent className="post-full-content">
       {/* TODO: this will apply the class when rehype-react is published https://github.com/rhysd/rehype-react/pull/11 */}
@@ -31,7 +31,7 @@ const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => {
       <TelegramComments
         customHeight="450"
         commentsNumber={3}
-        pageId={post.frontmatter.title}
+        pageId={pageId}
         showColorfulNames
         showDislikes
         showIconOutlines

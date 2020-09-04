@@ -229,7 +229,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                   />
                 </PostFullImage>
               )}
-              <PostContent htmlAst={post.htmlAst} />
+              <PostContent htmlAst={post.htmlAst} pageId={post.frontmatter.title} />
 
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
