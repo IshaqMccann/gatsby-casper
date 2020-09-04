@@ -22,17 +22,6 @@ export const Footer: React.FC = () => {
         </section>
         <SiteFooterNav>
           <Link to="/">Главная</Link>
-          {config.facebook && (
-            <a href={config.facebook} target="_blank" rel="noopener noreferrer">
-              Facebook
-            </a>
-          )}
-          {config.twitter && (
-            <a href={config.twitter} target="_blank" rel="noopener noreferrer">
-              Twitter
-            </a>
-          )}
-
           <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
       </div>
@@ -96,4 +85,3 @@ const SiteFooterNav = styled.nav`
     }
   }
 `;
-
