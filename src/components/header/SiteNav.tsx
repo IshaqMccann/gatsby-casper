@@ -104,15 +104,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
               )}
             </SiteNavContent>
           </SiteNavLeft>
-          <SiteNavRight>
-            <SocialLinks>
-              {config.facebook && (
-
-              )}
-              {config.twitter && (
-              
-              )}
-            </SocialLinks>
+          <SiteNavRight>  
             {config.showSubscribe && (
               <SubscribeButton onClick={(e) => {
                   e.preventDefault();
