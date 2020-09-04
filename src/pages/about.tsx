@@ -19,6 +19,8 @@ import {
 import { NoImage, PostFull, PostFullHeader, PostFullTitle } from '../templates/post';
 import { colors } from '../styles/colors';
 
+import TelegramComments from 'react-telegram-comments';
+
 const PageTemplate = css`
   .site-main {
     margin-top: 64px;
