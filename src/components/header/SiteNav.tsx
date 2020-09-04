@@ -96,9 +96,9 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 <li role="menuitem">
                   <Link to="/about">О мне</Link>
                 </li>
-                <li role="menuitem">
-                  <Link to="/tags/getting-started/">Начальная стаття</Link>
-                </li>
+                // <li role="menuitem">
+                //   <Link to="/tags/getting-started/">Начальная стаття</Link>
+                // </li>
               </ul>
               {isPost && (
                 <NavPostTitle ref={this.titleRef} className="nav-post-title">
@@ -109,6 +109,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
           </SiteNavLeft>
           <SiteNavRight>
             <SocialLinks>
+              {}
               // {config.facebook && (
               //   <a
               //     className="social-link-fb"
