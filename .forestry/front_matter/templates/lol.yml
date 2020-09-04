@@ -21,4 +21,5 @@ fields:
   name: tags
   label: tags
 pages:
+- src/content/2.md
 - src/content/тесттт-епта.md
