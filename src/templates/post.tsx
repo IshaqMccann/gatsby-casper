@@ -230,6 +230,17 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
+              <TelegramComments
+                customHeight="450"
+                commentsNumber={3}
+                pageId={post.frontmatter.title}
+                showColorfulNames
+                showDislikes
+                showIconOutlines
+                websiteKey={'wqsVGWye'}
+                containerClassName="awesome-comments"
+                wrapperClassName="awesome-comments__wrapper"
+              />
 
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
