@@ -9,6 +9,17 @@ import config from '../../website-config';
 
 export const SubscribeForm: React.FC = () => {
   return (
+            {/* This is required for the form to work correctly  */}
+      <FormGroup className="form-group">
+        <SubscribeEmail
+          className="subscribe-email"
+          type="email"
+          name={config.mailchimpEmailFieldName}
+          id={config.mailchimpEmailFieldName}
+          placeholder="youremail@example.com"
+        />
+      </FormGroup>
+      
       <SubscribeFormButton onClick={(e) => {  //type="submit"
         e.preventDefault();
         window.location.href='https://t.me/joinchat/AAAAAFgVjV5ki-2S9VAlbg';
