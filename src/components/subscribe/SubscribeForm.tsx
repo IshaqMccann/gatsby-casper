@@ -9,16 +9,6 @@ import config from '../../website-config';
 
 export const SubscribeForm: React.FC = () => {
   return (
-    <form
-      noValidate
-      css={SubscribeFormStyles}
-      action={config.mailchimpAction}
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      className="subscribe-form"
-      target="_blank"
-    >
       {/* This is required for the form to work correctly  */}
       
       <SubscribeFormButton onClick={(e) => {  //type="submit"
@@ -26,7 +16,7 @@ export const SubscribeForm: React.FC = () => {
         window.location.href='https://t.me/joinchat/AAAAAFgVjV5ki-2S9VAlbg';
         }}
       >
-        <span>Subscribe</span>
+        <span>Подписаться</span>
       </SubscribeFormButton>
     </form>
   );
