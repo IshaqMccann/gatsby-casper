@@ -134,7 +134,12 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
               )}
             </SocialLinks>
             {config.showSubscribe && (
-              <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
+              <SubscribeButton onClick={(e) => {
+      e.preventDefault();
+      window.location.href='http://google.com';
+      }}>
+                Подписаться
+              </SubscribeButton>
             )}
           </SiteNavRight>
         </nav>
