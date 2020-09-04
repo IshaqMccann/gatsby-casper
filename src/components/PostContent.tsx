@@ -3,6 +3,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 import RehypeReact from 'rehype-react';
 
+import TelegramComments from 'react-telegram-comments';
+
+
 import { colors } from '../styles/colors';
 
 const renderAst = new RehypeReact({
@@ -25,7 +28,17 @@ const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => {
     <PostFullContent className="post-full-content">
       {/* TODO: this will apply the class when rehype-react is published https://github.com/rhysd/rehype-react/pull/11 */}
       <Ast className="post-content" ast={htmlAst} />
-      <script async src="https://comments.app/js/widget.js?3" data-comments-app-website={'wqsVGWye'} data-limit="100"></script>
+      <TelegramComments
+        customHeight="450"
+        commentsNumber={3}
+        pageId={post.frontmatter.title}
+        showColorfulNames
+        showDislikes
+        showIconOutlines
+        websiteKey={'wqsVGWye'}
+        containerClassName="awesome-comments"
+        wrapperClassName="awesome-comments__wrapper"
+      />
     </PostFullContent>
   );
 };

@@ -21,8 +21,6 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
-import TelegramComments from 'react-telegram-comments';
-
 export interface Author {
   id: string;
   bio: string;
@@ -232,17 +230,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-              <TelegramComments
-                customHeight="450"
-                commentsNumber={3}
-                pageId={post.frontmatter.title}
-                showColorfulNames
-                showDislikes
-                showIconOutlines
-                websiteKey={'wqsVGWye'}
-                containerClassName="awesome-comments"
-                wrapperClassName="awesome-comments__wrapper"
-              />
 
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
