@@ -54,7 +54,7 @@ const config: WebsiteConfig = {
   coverImage: 'img/blog-cover.png',
   logo: 'img/log.png',
   lang: 'en',
-  siteUrl: 'https://lucid-rosalind-9694cb.netlify.app/',
+  siteUrl: 'https://lucid-rosalind-9694cb.netlify.app',
   facebook: 'https://www.facebook.com/ghost',
   twitter: 'https://twitter.com/tryghost',
   showSubscribe: true,
