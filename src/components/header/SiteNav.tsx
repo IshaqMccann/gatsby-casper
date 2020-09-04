@@ -108,8 +108,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
             </SiteNavContent>
           </SiteNavLeft>
           <SiteNavRight>
-            <SocialLinks>
-              {}
+            //<SocialLinks>
               // {config.facebook && (
               //   <a
               //     className="social-link-fb"
@@ -133,7 +132,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
               //     <Twitter />
               //   </a>
               // )}
-            </SocialLinks>
+            //</SocialLinks>
             {config.showSubscribe && (
               <SubscribeButton onClick={(e) => {
                   e.preventDefault();
