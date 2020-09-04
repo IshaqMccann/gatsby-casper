@@ -29,8 +29,8 @@ const PostContent: React.FC<PostContentProps> = ({ htmlAst, pageId }) => {
       {/* TODO: this will apply the class when rehype-react is published https://github.com/rhysd/rehype-react/pull/11 */}
       <Ast className="post-content" ast={htmlAst} />
       <TelegramComments
-        customHeight="450"
-        commentsNumber={3}
+        customHeight="auto"
+        commentsNumber={10}
         pageId={pageId}
         showColorfulNames
         showDislikes
