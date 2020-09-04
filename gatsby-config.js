@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'Донбасс юридический',
     description: 'Все, что нужно знать',
-    siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
+    siteUrl: 'https://lucid-rosalind-9694cb.netlify.app/', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
