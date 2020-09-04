@@ -103,7 +103,7 @@ const About: React.FC = () => (
               customHeight="450"
               commentsNumber={3}
               isDark
-              pageId="https://lucid-rosalind-9694cb.netlify.app/about/"
+              pageId="about"
               showColorfulNames
               showDislikes
               showIconOutlines
