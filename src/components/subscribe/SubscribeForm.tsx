@@ -29,9 +29,9 @@ export const SubscribeForm: React.FC = () => {
           placeholder="youremail@example.com"
         />
       </FormGroup>
-<!--       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+/*       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
         <input type="text" name={config.mailchimpName} tabIndex={-1} />
-      </div> -->
+      </div> */
       
       <SubscribeFormButton onClick={(e) => {  //type="submit"
         e.preventDefault();
