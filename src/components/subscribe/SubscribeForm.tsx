@@ -1,15 +1,22 @@
 import { lighten, saturate } from 'polished';
 import React from 'react';
 import styled from '@emotion/styled';
-
 import { css } from '@emotion/core';
-
 import { colors } from '../../styles/colors';
 import config from '../../website-config';
-
 export const SubscribeForm: React.FC = () => {
   return (
-            {/* This is required for the form to work correctly  */}
+    <form
+      noValidate
+      css={SubscribeFormStyles}
+      action={config.mailchimpAction}
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      className="subscribe-form"
+      target="_blank"
+    >
+      {/* This is required for the form to work correctly  */}
       <FormGroup className="form-group">
         <SubscribeEmail
           className="subscribe-email"
@@ -19,13 +26,16 @@ export const SubscribeForm: React.FC = () => {
           placeholder="youremail@example.com"
         />
       </FormGroup>
-      
+/*       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+        <input type="text" name={config.mailchimpName} tabIndex={-1} />
+      </div> */
+
       <SubscribeFormButton onClick={(e) => {  //type="submit"
         e.preventDefault();
         window.location.href='https://t.me/joinchat/AAAAAFgVjV5ki-2S9VAlbg';
         }}
       >
-        <span>Подписаться</span>
+        <span>Subscribe</span>
       </SubscribeFormButton>
     </form>
   );
