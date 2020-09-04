@@ -50,7 +50,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'Донбасс юридический',
-  description: 'Юристический юрист юристом юристам',
+  description: 'Юридический блог Донбасса',
   coverImage: 'img/blog-cover.png',
   logo: 'img/log.png',
   lang: 'en',
