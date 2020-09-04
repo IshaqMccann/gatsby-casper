@@ -26,10 +26,7 @@ export const SubscribeForm: React.FC = () => {
           placeholder="youremail@example.com"
         />
       </FormGroup>
-/*       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-        <input type="text" name={config.mailchimpName} tabIndex={-1} />
-      </div> */
-
+      
       <SubscribeFormButton onClick={(e) => {  //type="submit"
         e.preventDefault();
         window.location.href='https://t.me/joinchat/AAAAAFgVjV5ki-2S9VAlbg';
