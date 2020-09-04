@@ -96,9 +96,6 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 <li role="menuitem">
                   <Link to="/about">О мне</Link>
                 </li>
-                // <li role="menuitem">
-                //   <Link to="/tags/getting-started/">Начальная стаття</Link>
-                // </li>
               </ul>
               {isPost && (
                 <NavPostTitle ref={this.titleRef} className="nav-post-title">
@@ -108,31 +105,14 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
             </SiteNavContent>
           </SiteNavLeft>
           <SiteNavRight>
-            //<SocialLinks>
-              // {config.facebook && (
-              //   <a
-              //     className="social-link-fb"
-              //     css={[SocialLink, SocialLinkFb]}
-              //     href={config.facebook}
-              //     target="_blank"
-              //     title="Facebook"
-              //     rel="noopener noreferrer"
-              //   >
-              //     <Facebook />
-              //   </a>
-              // )}
-              // {config.twitter && (
-              //   <a
-              //     css={SocialLink}
-              //     href={config.twitter}
-              //     title="Twitter"
-              //     target="_blank"
-              //     rel="noopener noreferrer"
-              //   >
-              //     <Twitter />
-              //   </a>
-              // )}
-            //</SocialLinks>
+            <SocialLinks>
+              {config.facebook && (
+
+              )}
+              {config.twitter && (
+              
+              )}
+            </SocialLinks>
             {config.showSubscribe && (
               <SubscribeButton onClick={(e) => {
                   e.preventDefault();
