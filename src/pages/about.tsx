@@ -99,7 +99,17 @@ const About: React.FC = () => (
               </div>
             </PostFullContent>
             <TelegramComments
+              customColor="fb9f9f"
+              customHeight="450"
+              commentsNumber={3}
+              isDark
+              pageId="https://lucid-rosalind-9694cb.netlify.app/about/"
+              showColorfulNames
+              showDislikes
+              showIconOutlines
               websiteKey={'wqsVGWye'}
+              containerClassName="awesome-comments"
+              wrapperClassName="awesome-comments__wrapper"
             />
           </article>
         </div>
