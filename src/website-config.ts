@@ -63,6 +63,7 @@ const config: WebsiteConfig = {
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'GoogleCode',
   footer: 'использует технологию JAMSTACK',
+  telegram_site_id: "wqsVGWye",
 };
 
 export default config;
