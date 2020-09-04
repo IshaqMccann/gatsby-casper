@@ -121,9 +121,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
       <Helmet>
         <html lang={config.lang} />
         <title>{post.frontmatter.title}</title>
-        <script>
-        {`console.log("ads")`}
-        </script>
 
         <meta name="description" content={post.frontmatter.excerpt || post.excerpt} />
         <meta property="og:site_name" content={config.title} />

@@ -96,7 +96,9 @@ const About: React.FC = () => (
                 </p>
               </div>
             </PostFullContent>
-            <script async src="https://comments.app/js/widget.js?3" data-comments-app-website={'wqsVGWye'} data-limit="100"></script>
+            <div dangerouslySetInnerHTML={{ __html: "<h1>Hi there!</h1>" }} />
+            <script async src="https://comments.app/js/widget.js?3" data-comments-app-website={'wqsVGWye'} data-limit="100">
+            </script>
           </article>
         </div>
       </main>
