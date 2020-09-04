@@ -17,9 +17,6 @@ export const SubscribeForm: React.FC = () => {
       target="_blank"
     >
       {/* This is required for the form to work correctly  */}
-      <FormGroup className="form-group">
-        
-      </FormGroup>
       
       <SubscribeFormButton onClick={(e) => {  //type="submit"
         e.preventDefault();
