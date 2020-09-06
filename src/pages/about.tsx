@@ -57,7 +57,7 @@ const About: React.FC = () => (
             </PostFullHeader>
 
             <PostFullContent className="post-full-content">
-              <div className="post-content">  
+              <div className="post-content">
                 <p>
                   Начнем знакомство с теории. Любое государство стоит на 3 китах (ветвей) власти.
                   Законодательной, исполнительной и судебной. В некоторых государствах постсоветского
