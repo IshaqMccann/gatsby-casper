@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'Донбасс юридический',
     description: 'Все, что нужно знать',
-    siteUrl: 'https://lucid-rosalind-9694cb.netlify.app', // full path to blog - no ending slash
+    siteUrl: 'https://https://ldnr-prav.net', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
@@ -54,7 +54,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://lucid-rosalind-9694cb.netlify.app',
+        siteUrl: 'https://ldnr-prav.net',
       },
     },
     'gatsby-plugin-emotion',
