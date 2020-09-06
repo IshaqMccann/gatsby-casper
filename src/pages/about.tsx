@@ -57,10 +57,7 @@ const About: React.FC = () => (
             </PostFullHeader>
 
             <PostFullContent className="post-full-content">
-              <div className="post-content">
-                <h5>
-                  A starter template for Gatsby <br /> GitHub: <a href="https://github.com/scttcper/gatsby-casper">scttcper/gatsby-casper</a>
-                </h5>
+              <div className="post-content">  
                 <p>
                   Начнем знакомство с теории. Любое государство стоит на 3 китах (ветвей) власти.
                   Законодательной, исполнительной и судебной. В некоторых государствах постсоветского
