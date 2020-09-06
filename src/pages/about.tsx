@@ -39,7 +39,7 @@ const PageTemplate = css`
 const About: React.FC = () => (
   <IndexLayout>
     <Helmet>
-      <title>About</title>
+      <title>Начало</title>
     </Helmet>
     <Wrapper css={PageTemplate}>
       <header className="site-archive-header no-image" css={[SiteHeader, SiteArchiveHeader]}>
@@ -53,7 +53,7 @@ const About: React.FC = () => (
         <div css={inner}>
           <article className="post page" css={[PostFull, NoImage]}>
             <PostFullHeader className="post-full-header">
-              <PostFullTitle className="post-full-title">About</PostFullTitle>
+              <PostFullTitle className="post-full-title">Начало</PostFullTitle>
             </PostFullHeader>
 
             <PostFullContent className="post-full-content">
@@ -62,39 +62,33 @@ const About: React.FC = () => (
                   A starter template for Gatsby <br /> GitHub: <a href="https://github.com/scttcper/gatsby-casper">scttcper/gatsby-casper</a>
                 </h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo finibus leo,
-                  non tempus magna vehicula ac. Maecenas mollis ante finibus pharetra imperdiet.
-                  Maecenas in aliquam purus. Nam et massa a nulla fermentum dapibus sit amet in
-                  neque. Ut ipsum ipsum, rhoncus a sodales pellentesque, interdum a elit. Nullam
-                  aliquam tellus nibh, eget laoreet dui aliquet non. Vestibulum malesuada ante at
-                  diam tempus, ac interdum risus scelerisque. Sed ipsum neque, vulputate porta diam
-                  eget, consequat blandit nulla. Integer volutpat velit vitae purus lacinia aliquam.
-                  Integer bibendum ipsum vitae magna pulvinar, nec vehicula dolor vulputate. Nulla
-                  eu massa id orci placerat finibus vel sit amet eros. Vestibulum quis consequat
-                  massa. Sed sagittis sollicitudin massa at commodo. Praesent diam nisi, imperdiet
-                  posuere eleifend nec, blandit ac massa.
+                  Начнем знакомство с теории. Любое государство стоит на 3 китах (ветвей) власти.
+                  Законодательной, исполнительной и судебной. В некоторых государствах постсоветского
+                  пространства существует и четвертая, неофициальная, ветка власти – контрольно
+                   – надзорная.
                 </p>
                 <p>
-                  Vestibulum semper pretium ipsum nec congue. Ut ac eros nisi. Donec leo sem,
-                  aliquam mollis sapien ultrices, dapibus congue diam. Proin viverra dapibus
-                  blandit. Ut mauris tellus, tristique id felis vel, venenatis vestibulum nunc. Nam
-                  molestie pulvinar nibh, eget egestas augue. Maecenas tellus arcu, mattis ut ipsum
-                  non, sollicitudin convallis nunc. Donec nec neque tristique, aliquet lacus id,
-                  laoreet nunc. Cras dapibus nisi nulla, ullamcorper faucibus neque suscipit ac.
-                  Donec eget orci venenatis justo lobortis volutpat. Proin vel placerat nisl.
-                  Integer arcu nunc, sodales eu fringilla non, aliquam non diam. Cras placerat,
-                  massa et faucibus pretium, ante elit tincidunt tellus, tristique ultricies velit
-                  quam et massa.
+                  В своем блоге я буду затрагивать конкретно судебную ветку власти. Ведь не зря
+                  пунктом первым статьи первой Конституции Донецкой Народной Республики определено,
+                  что Республика является демократическим правовым социальным государством.
                 </p>
                 <p>
-                  In nunc lacus, dapibus vitae lacus sit amet, efficitur iaculis neque. Suspendisse
-                  ut tellus quis leo vestibulum tincidunt. Aenean nec enim ac dolor lacinia semper.
-                  Ut sed laoreet libero. Nunc elementum sollicitudin accumsan. Nunc eu augue neque.
-                  Proin a tortor nibh. Cras eu nisl ornare sapien feugiat pellentesque. Mauris
-                  dignissim vel quam eu pellentesque. Integer sit amet posuere quam, eu ullamcorper
-                  odio. Nullam a lacus tempus sapien dignissim ullamcorper. In hac habitasse platea
-                  dictumst. Proin quis massa aliquam, feugiat tortor sit amet, tincidunt urna. Donec
-                  posuere pulvinar lectus, ac semper ipsum vulputate quis.
+                  Главой 7 Конституции закреплены основные засады судебной ветки
+                  власти и прокуратуры в Республике.
+                </p>
+                <p>
+                  Довольно часто будут проскакивать посты критики действий или
+                  бездействий соответствующих должностных лиц представителей Фемиды.
+                </p>
+                <p>
+                  Но и не будем забывать про контрольно – надзорную.
+                </p>
+                <p>
+                  Помоги одному человеку и спасешь мир. Именно так гласит Библия.
+                </p>
+                <p>
+                  Будут затрагиваться самые острые правовые проблемы в Республике
+                  и будет даваться соответствующая правовая помощь.
                 </p>
               </div>
             </PostFullContent>

@@ -94,7 +94,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Link to="/">Главная</Link>
                 </li>
                 <li role="menuitem">
-                  <Link to="/about">О мне</Link>
+                  <Link to="/about">О блоге</Link>
                 </li>
               </ul>
               {isPost && (
@@ -104,7 +104,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
               )}
             </SiteNavContent>
           </SiteNavLeft>
-          <SiteNavRight>  
+          <SiteNavRight>
             {config.showSubscribe && (
               <SubscribeButton onClick={(e) => {
                   e.preventDefault();
