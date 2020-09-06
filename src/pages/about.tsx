@@ -90,10 +90,8 @@ const About: React.FC = () => (
               </div>
             </PostFullContent>
             <TelegramComments
-              customColor="fb9f9f"
-              customHeight="450"
-              commentsNumber={3}
-              isDark
+              customHeight="auto"
+              commentsNumber={10}
               pageId="about"
               showColorfulNames
               showDislikes
