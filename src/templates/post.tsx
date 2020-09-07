@@ -21,6 +21,18 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
+import {
+  FacebookShareButton,
+  TelegramShareButton,
+  FacebookIcon,
+  TelegramIcon,
+  VKShareButton,
+  VKIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from "react-share"
+
+
 export interface Author {
   id: string;
   bio: string;
@@ -231,6 +243,24 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
               )}
               <PostContent htmlAst={post.htmlAst} pageId={post.frontmatter.title} />
 
+              <div className="post-social-title">
+                  <p> Поделится:</p>
+              </div>
+              <div className="post-social">
+                  <FacebookShareButton url={config.siteUrl + location.pathname} quote={post.frontmatter.title} hashtag={""}>
+                    <FacebookIcon size={32} round={true}/>
+                  </FacebookShareButton>
+                  <TelegramShareButton url={config.siteUrl + location.pathname} title={post.frontmatter.title}>
+                    <TelegramIcon size={32} round={true}/>
+                  </TelegramShareButton>
+                  <VKShareButton url={config.siteUrl + location.pathname} title={post.frontmatter.title}>
+                    <VKIcon size={32} round={true}/>
+                  </VKShareButton>
+                  <TwitterShareButton url={config.siteUrl + location.pathname} title={post.frontmatter.title}>
+                    <TwitterIcon size={32} round={true}/>
+                  </TwitterShareButton>
+              </div>
+
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
             </article>
@@ -255,6 +285,19 @@ const PostTemplate = css`
     margin-top: 64px;
     background: #fff;
     padding-bottom: 4vw;
+  }
+
+  .post-social {
+    width: max-content;
+    margin: auto;
+  }
+
+  .post-social-title {
+    text-align: center;
+  }
+
+  .react-share__ShareButton {
+    padding: 0 5px 0 5px!important;
   }
 
   @media (prefers-color-scheme: dark) {
