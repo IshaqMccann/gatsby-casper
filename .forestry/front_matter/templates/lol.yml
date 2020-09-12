@@ -21,4 +21,5 @@ fields:
   name: tags
   label: tags
 pages:
+- src/content/право-на-вознаграждение.md
 - src/content/суд-республики.md
