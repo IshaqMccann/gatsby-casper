@@ -20,6 +20,20 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-firebase',
+      options: {
+        credentials: {
+          apiKey: 'AIzaSyBf7OaR5bJCs44H_pMPR4Bb0AYCEGPgHf8',
+          authDomain: '<YOUR_FIREBASE_AUTH_DOMAIN>',
+          databaseURL: '<YOUR_FIREBASE_DATABASE_URL>',
+          projectId: '<YOUR_FIREBASE_PROJECT_ID>',
+          storageBucket: '<YOUR_FIREBASE_STORAGE_BUCKET>',
+          messagingSenderId: '<YOUR_FIREBASE_MESSAGING_SENDER_ID>',
+          appId: '<YOUR_FIREBASE_APP_ID>',
+        },
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
@@ -73,7 +87,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-XXXX-Y',
-        // Puts tracking script in the head instead of the body
+        // Puts tracking script in the head instead of the bod
         head: true,
         // IP anonymization for GDPR compliance
         anonymize: true,
