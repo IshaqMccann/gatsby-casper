@@ -22,6 +22,7 @@ fields:
   label: tags
 pages:
 - src/content/верховный-суд.md
+- src/content/митинг-рабство.md
 - src/content/право-на-вознаграждение.md
 - src/content/суд-республики.md
 - src/content/юридическая-помощь.md
