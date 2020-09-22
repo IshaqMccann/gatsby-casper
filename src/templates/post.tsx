@@ -20,6 +20,7 @@ import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
+import ViewCounter from '../components/ViewCounter';
 
 import {
   FacebookShareButton,
@@ -225,6 +226,9 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                         </time>
                         <span className="byline-reading-time">
                           <span className="bull">&bull;</span> {post.timeToRead} min read
+                        </span>
+                        <span className="byline-reading-time">
+                          <span className="bull">&bull;</span> <ViewCounter id={post.frontmatter.title} />
                         </span>
                       </div>
                     </section>
