@@ -21,6 +21,7 @@ fields:
   name: tags
   label: tags
 pages:
+- src/content/..md
 - src/content/верховный-суд.md
 - src/content/митинг-рабство.md
 - src/content/право-на-вознаграждение.md
